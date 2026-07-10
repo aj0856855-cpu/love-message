@@ -1,14 +1,70 @@
-<h1>
-💚 ACCESS GRANTED 💚<br><br>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Access Granted</title>
 
-Hi, Good Morning 🌅<br><br>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+background:#000;
+color:#00ff00;
+font-family:monospace;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
 
-💖 Meri Jaan Falani 😘<br><br>
+#text{
+font-size:28px;
+text-shadow:0 0 10px #00ff00;
+white-space:pre-line;
+}
+</style>
 
-You Hacked My Heart 💚<br>
-Ab ye Dil Sirf Tumhara Hai ❤️<br><br>
+</head>
 
-🌹 Love You Forever 🌹<br><br>
+<body>
 
-- Your Love ❤️
-</h1>
+<div id="text"></div>
+
+<script>
+
+let msg=`ACCESS GRANTED...
+
+Scanning Heart...
+
+Success...
+
+Hi Good Morning 🌅
+
+💖 Meri Jaan Falani 😘
+
+Tumne Mera Dil Hack Kar Liya ❤️
+
+I Love You Forever 🌹`;
+
+let i=0;
+
+function type(){
+
+if(i<msg.length){
+
+document.getElementById("text").innerHTML+=msg.charAt(i);
+
+i++;
+
+setTimeout(type,60);
+
+}
+
+}
+
+type();
+
+</script>
+
+</body>
+</html>
